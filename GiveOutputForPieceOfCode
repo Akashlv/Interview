@@ -1,0 +1,30 @@
+Exception
+
+try
+	{
+		int a = 10 / 0;
+		if (a > 0)
+			return 4;
+	}catch(
+	Exception e)
+	{
+		return 45;
+	}finally
+	{
+		return 34;
+	}
+	
+
+String
+	
+		String a = "abc";
+		String b = "abc";
+		String c = new String("abc");
+		String d = new String("abc");
+
+		System.out.println(equals(a == b));
+		System.out.println(this.equals(a.equals(b)));
+		System.out.println(this.equals(c == d));
+		System.out.println(this.equals(c.equals(d)));
+
+		
