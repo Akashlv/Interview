@@ -1,0 +1,33 @@
+Logical Question
+
+
+HasedIn
+
+1. You have 15 rs and u can purchase choclate at Re 1 if u give 3 choclate wrappers u can get one extra choclate
+In total how many choclates u can eat ?
+
+Ans - 22
+
+Walmart
+
+2. A wind is blowing from East to west you are living in a Island which is surrounded by ocean u dont have boat.
+How will u survive?
+Note - You cannot jump to ocean and swim if u jump u will die 
+
+Ans - When the wind starts from East to west fire will also start from east to west
+I will move towards west where there is no fire cut down a tree and travel from west to east by sitting on that wood
+Once fire move from east to west there will be less / No fire in East so i will go there and survive 
+Since everything on Island is burnt i will not have anything to east i will do fishing and survive
+
+
+
+
+
+ 
+
+
+
+
+
+
+	

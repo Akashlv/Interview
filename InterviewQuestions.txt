@@ -1,0 +1,393 @@
+Java 
+
+Polymorphism
+OverLoading OverRiding - Will be asking to write the Parent and child class in Eclipse add more questions around it
+Inheritance
+Multilevel vs Multiple inheritance
+Encapsulation ( Setter and Getter Methods ) - Private variables
+Where have u implementes Abstraction, Encapsulation, Inheritance, Polymorphism in testing Framework ? 
+What is static and Non Static?
+Constructors
+can constructor have return type?
+can we have multiple return keyword in method?
+Super() and this() keyWord
+Can we overload Main method?
+can we override Main Method?
+Access Modifiers
+Different types of Exception in Java?
+Super Class of all Classes in Java?
+Why do we overide toString() method?
+What is Abstract class and Interface and what is difference? 
+Why String is immutable?
+String Buffer and String Builder
+Design Pattren - Singleton Class?
+Wrapper class in Java
+What are primitive data types?
+What is upcating and downCasting?
+
+
+Exception Handling
+Checked Exception
+Unchecked Exception
+How to write Custom Exception? Write one Custom Exception
+Throw vs Throws
+can we have Multiple Catch for single try?
+
+Colection
+
+List vs Set
+ArrayList vs LinkedList
+HashMap vs HashTable
+Iterator vs ListIterator
+Super Interface of Collcetion? - Iterbale Interface
+When should we use TreeSet?
+How to iterator KeySet of HashMap?
+Internal Architecture of HashMap
+Internal Architecture of hashset
+concurent haspmap and hashmap
+
+Thread
+
+Thread Life Cycle
+How to create thread? What are two types of thread creation?
+How to setName for thread?
+which method is overdidden when the thread is created? - run()
+what is deamon thread?
+what is Deadlock
+
+Advanced
+
+How to clone object?
+different way to create object
+serialize deserialize
+Constant pool
+String pool
+Fail fast and fail safe
+Synchronization
+Differece Between Collection and Collections
+What are Microservices
+
+Java 8
+What is functional interface
+Write Code in Streams for Filter Sort and Reduce
+Explain Lambda Expression
+
+------------------------------------------------------------------------------
+Selenium
+
+Code to Launch Chrome Browser
+webdrivermanager.chromdriver.setup();
+dirver = new chromedriver();
+driver.get();
+
+Explicit wait Implicit wait and Fluent wait
+
+driver.maanger.timeout.Implicit wait(driver, 10.seconds)
+
+webdriverwait wait = new webdriverwait(driver, 10);
+wait.until(ExpectedCondition.visibilityOfElemet());
+
+Explain Select function
+select select = new select(webelement)
+select.byVisisbletext()
+select.byValue();
+select.ByIndex();
+
+How to handle alert
+Alert alter = new Alert();
+
+How to handle frames
+driver.switchtoFrame();
+driver.switchToDefualtContent();
+
+Explain Javscript in Selenium
+JavascriptEcexutir js = new JavascriptEcexutir();
+js.execute("argumnet[0].click" , webelement);
+js.execute("window.scroolBy(x,y)" , webelement);
+js.execute("document.getElementById().ScroolIntoView(true)" , webelement);
+
+Explain Action class in Selenium
+Action a = new Action;
+a.moveToElement().build().Perform().click();
+a.dragAndDrow(Source, Target);
+
+Explain Ronot Class in Selenium
+Robot robot = mew Robot();
+
+Difference between Robot class and Action Class
+
+How to take screen Shot in Selenium
+FileUtil fu = ((TakeScreenShot) driver).getScreenShotAs(Output.File);
+FileUtil.copy(fu, taget.jpg);
+
+How to take full screenshot in selenium
+Screenshot screenshot = new Ashot().takeScreenshot(driver);
+Screenshot s=new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
+ImageIO.write(s.getImage(),"PNG",new File("<< file path>>"));
+
+WindowHandles in Selenium
+Set<String> allWindows = driver.getWindowHandles();
+String currentWindow = driver.getWindowHandle();
+
+What are DesiredCapabilities
+
+How to handle Dynamic web table 
+
+tr/td
+
+Sibling Ancestor
+Flipkart
+//div[@class='_1kidPb']//following-sibling::span[text()='Men']
+//div[@class='_1kidPb']//following::span[text()='Men']//parent::div
+//div[@class='_1kidPb']//following::span[text()='Men']//preceding::span[2]
+//div[@class='_1kidPb']//following::span[text()='Men']//*[name()='svg']//ancestor::span
+
+Xpath for the webelements with SVG Tags
+
+What is the Selenium Grid?
+Scenario – when I click on the link, it will open three child browsers, I want to check whether the logo is present in the second child browser. How do you write a script for it?
+Write a script to check whether alert pop is displayed or not
+Which is the programing language used to build Selenium
+How to handle Stale Element Exception
+How to achive cross browser testing
+
+--------------------------------------------------------------------------------------------------------------
+
+TestNG
+
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+@BeforeMethod
+@Test
+
+@DataProvider
+
+Parameters - Priority, invocationCount, Groups, DepedensOnMethod, DependOnGroup
+
+ITestListeners
+IRetryAnalyzer
+
+Assertions - Hard,Soft
+Implements soft assert in Eclipse and give the output
+Parellel Execution using TestSuite
+How to customize the Emailable report
+What is TestNG?
+What is the TestNG suite?
+How do you create a TestNG suite?
+difference between @BeforeMethod,@BeforeTest
+----------------------------------------------------------------------------------------------------------------
+
+Cucumber
+
+.Feature
+
+Feature : 
+
+@Smoke
+Scenato:
+	Given 
+	When
+	Then
+	And
+	Then
+	
+Examples
+	
+stepDefination
+
+@Given("")
+pubic void launchBrowser(){
+}
+
+TestRunner
+	@RunWith(Cucumber.Class)
+	@CucumberOptions
+	(
+		feature = {},
+		glue={stepDefination},
+		dryRun=true,
+		monochorme=true,
+		plugin={}
+		tag={Smoke}
+	)
+	
+mention @tag in order to groupd and run all the related Features
+What is Background?
+How to verify all the stepDefination are present?
+How to add Emailable report to Cucumber framework?
+
+---------------------------------------------------------------------------------------------------------
+	
+RestAPI
+
+How do u verify Response in schema?
+Authorization and Authentication
+OAuth - Barier Token
+Difference POST PUT PATCH
+Given a sample API to test -  Explain possible Postive and Negative test cases and write the RestAssured Code
+Postman - collections
+Give the Test Cases for testing OTP API
+How do we write POJO Classes what are the uses ?
+Create the RestAPI framework in Eclipse and write runnable testcase the provided GET/POST API 
+
+GET
+RestAssured.BaseURI = "";
+RequestSpecification request = RestAssured.given();
+Response response = request.get();
+Response response = request.getStatusCode();
+Response response = request.getStatusLine();
+
+POST
+RestAssured.BaseURI = "";
+RequestSpecification request = RestAssured.given();
+request.header();
+JSONObject requestBody = new JSONObject;
+requestBody.put();
+request.body(requestBody.toJSONString());
+Response response = request.post();
+JSONPath jsp = response.jsonPath();
+
+Timeout configuration
+
+RestAssuredConfig config = RestAssured.config().httpClient(HttpClientConfig.httpClientConfig()
+						   .setParam(CoreConnectionPNames.CONNECTION_TIMEOUT, 1000)
+						   .setParam(CoreConnectionPNames.SO_TIMEOUT, 1000));
+
+given().config(config).post("http://localhost:8884");
+
+Status code
+10* - Informational
+200 - success
+201 - Created
+202 - Accepted
+30* - Redirectional
+400 - Bad Request
+401 - UnAuthorized
+402 - Payment Required
+403 - Forbidden
+404 - Not Found
+500 - Internal Server Error
+501 - Not Implemented
+502 - Bad Gateway
+503 - Service Unavailable
+504 - Gateway Timeout
+
+-----------------------------------------------------------------------------------------------------
+
+Jenkins 
+
+How to add Parameters in Jenkins to achive CrossBrowser testing?
+Corn Job
+How jenkins jobs are configured in your project?
+Why Jenkins is required?
+Will Jenkins launch application while executing scripts?
+
+SMTP Email Notification
+Build Trigger
+Hour Minute DayOfMonth Month DayOfWeek
+0-23 1-60 1-31 1-12 0-6
+
+------------------------------------------------------------------------------------------------------
+
+Maven
+
+Maven Life Cycle
+Validate 
+Compile
+Test
+Package
+Verify 
+Install
+Deploy
+
+Dependecny
+	artifact-id
+	group-id
+	version
+Dependecny
+
+------------------------------------------------------------------------------------------------------
+
+GIT
+
+git add .
+git init
+git checkout -b branch
+git delete branch
+git push
+git branch
+git deleter
+git merge
+git pull =  git fetch + git merge
+git fetch
+git commit -m ""
+1
+2
+3
+git checkout head~1 - 3
+git bisect
+
+Differece between fetch and full?
+What is git stash?
+How to SStash chnages and then get it back to Working directory?
+
+------------------------------------------------------------------------------------------------------
+
+Manual Testing
+
+Test Plan
+Objective
+Scrope
+	Feature to be tested and not tested
+Test Methodologies
+Approacj
+Assumptions
+Risk
+Mitigation plan
+Roles and Responsibilities
+Schedules
+Defect Tracking
+Test Environment
+Entry and Exit criteria
+Test Automation
+Deliverables
+Templates
+
+What is Defered Bug?
+Bug Life Cycle
+What is Boundary Value analysis
+What is Black Box and White Box testing
+Difference between Smoke and Sanity
+Why UAT is required?
+What is Integration Testing ? Give Example
+
+---------------------------------------------------------------------------
+
+Framework
+
+Explain Current Farmework
+Design Data-Driven Framework for a Scenario
+Design BDD Framework for a Scenario
+Design RestAssured Framework
+
+
+
+
+
+
+
+
+
+	
+
+
+
+  
+
+
+
+
+
+
+
